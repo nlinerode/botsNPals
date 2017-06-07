@@ -104,6 +104,7 @@ div.sidenav ul li a:hover:not(.active) {
 
 div.content {
     margin-left: 25%;
+    //margin-bottom: 20%;
     padding: 1px 16px;
     height: 100%;
     padding-top: 15%;
@@ -119,6 +120,8 @@ div.content .inner-content {
     width: 50%;
     text-align: center;
     margin: auto;
+    margin-top: -10%;
+    margin-bottom: 30%;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 4px 4px 6px #696969;
@@ -132,9 +135,10 @@ div.content .inner-content {
 div.content #inner-content-contact {
     background-color: rgba(241, 241, 241, .85);
     width: 60%;
-    height: 450px;
     text-align: center;
     margin: auto;
+    margin-top: -10%;
+    margin-bottom: 20%;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 4px 4px 6px #696969;
@@ -221,7 +225,7 @@ input[type="radio"] {
 
 /*Find Friend Button*/
 
-div.content .inner-content #friend-button {
+div.content .inner-content .friend-button {
     display: block;
     width: 25%;
     padding: 10px;
@@ -235,7 +239,7 @@ div.content .inner-content #friend-button {
     font-size: 1.2rem;
 }
 
-div.content .inner-content #friend-button:hover {
+div.content .inner-content .friend-button:hover {
     box-shadow: 4px 2px 8px #000, 6px 6px 14px #525252;
     font-weight: 700;
     transition-duration: .5s;
@@ -246,7 +250,7 @@ div.content .inner-content #friend-button:hover {
 
 .next-button {
     display: inline-block;
-    width: 15%;
+    width: 20%;
     padding: 5px;
     margin: auto;
     margin-top: 10px;
@@ -270,7 +274,7 @@ div.content .inner-content #friend-button:hover {
 
 .submit-button {
     display: block;
-    width: 15%;
+    width: 25%;
     padding: 5px;
     margin: auto;
     margin-top: 10px;
@@ -296,6 +300,7 @@ footer {
     box-shadow: -2px -2px 6px #696969;
     border-radius: 10px;
     padding: 5px;
+    z-index: -1;
 }
 
 
@@ -335,6 +340,11 @@ footer {
     textarea {
         width: 90%;
     }
+    .next-button,
+    .submit-button,
+    .friend-button {
+        width: 90%;
+    }
     /*
     footer{
         z-index: -1;
@@ -359,7 +369,7 @@ footer {
         width: 90%;
     }
     div.content .inner-content {
-        margin-bottom: 15px;
+        margin-bottom: 20%;
         margin-top: -10px;
     }
     footer {
