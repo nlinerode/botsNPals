@@ -322,11 +322,13 @@ footer {
     div.content {
         margin: auto;
         margin-bottom: 10%;
+        position: relative;
     }
     div.content .inner-content {
         margin: auto;
         width: 80%;
         text-align: center;
+        position: relative;
     }
     input[type="text"],
     input[type="email"],
