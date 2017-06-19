@@ -215,7 +215,7 @@
 
   div.content .inner-content .friend-button {
     display: block;
-    width: 40%;
+    width: 100%;
     padding: 10px;
     margin: auto;
     border: 2px solid #696969;
@@ -285,6 +285,13 @@
     padding: 5px;
     z-index: -1;
   }
+  /* Media Query > 768*/
+
+  @media screen and (min-width: 768px) {
+    div.content .inner-content .friend-button {
+      width: 50%;
+    }
+  }
   /* Media Query 768*/
 
   @media screen and (max-width: 768px) {
@@ -318,8 +325,8 @@
     input[type="text"], input[type="email"], textarea {
       width: 90%;
     }
-    .next-button, .submit-button, .friend-button {
-      width: 90%;
+    .next-button, .submit-button, div.content .inner-content .friend-button {
+      width: 80%;
     }
     /*
     footer{
@@ -343,10 +350,6 @@
     div.content .inner-content {
       margin-bottom: 20%;
       margin-top: -10px;
-    }
-    .friend-button {
-      display: flex;
-      width: 100%;
     }
     footer {
       text-align: center;
